@@ -9,8 +9,6 @@ venv/
 #System files
 .DS_Store
 
-.ipynb_checkpoints/
-
 #Logs
 *.log
 
@@ -18,3 +16,6 @@ venv/
 *.csv
 *.png
 *.jpg
+
+#Ignore result files
+report/results.txt

@@ -5,11 +5,7 @@ def load_pos_dataset(split="train"):
     data = dataset[split]
     print("\nDataset Loaded Successfully!\n")
     print(f"Total sentences: {len(data)}")
-    sample = data[0]
-    print("\nSample Data:\n")
-    print("Words:", sample["words"])
-    print("Tags:", sample["labels"])
-    return dataset
+    return data
 
 if __name__ == "__main__":
     load_pos_dataset()
