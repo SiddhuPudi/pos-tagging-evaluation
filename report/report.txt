@@ -1,0 +1,27 @@
+First checked the NLTK tagger and the accuracy is: 0.9449
+
+Next checked the spaCy tagger for it I used 3 times of checking and they are:
+The first I used direct sentences and the output is like ~0.65 may be because of token mismatch
+2nd I used forced doc and the result is ~0.13 and the reason for it may be due to pipeline breakdown
+And for the 3rd method I used the manual alignment and the result came correct and the accuracy for it is 0.9533
+
+Final accuracy of spaCy is 0.9533
+
+Next I tested the stanza tagger and it took 2 tries for me and they are:
+1st is the direct sentences using where some tokens may be mismatched and the accuracy is returned as ~0.7
+2nd is the token alignment and the accuracy significantly improved to 0.9452
+
+Final accuracy of stanza is 0.9452
+
+Also checked the baseline tagger where it has the least accuracy i.e; 0.3253, where it confirms that rule-based approaches are insufficienct for accurate POS tagging.
+
+Next implemented the metrics of POS tagger like precision, recall and F1 while accuracy provides overall measure, precision and recall reveal deeper insights into model performance and the F1 results had been like:
+Baseline: 0.2252, this says rule based tagging is insuffienct for real world POS tasks.
+NLTK: 0.9384, Statistical models perform well but it may be lacking contextual understanding.
+spaCy: 0.9516, it achived the best balance, making it the most reliable model in this evaluation.
+Stanza: 0.9439, it performed competitively but it may be affected by token alignment and processing differences.
+Among all spaCy achieved the highest F1 score, indicating superior balance between precision and recall.
+spaCy provided the best trade-off between accuracy and processing speed, whereas Stanza, although accurate, was comparatively slower.
+
+After all the metrics, Implemented the confusion matrix for spaCy as it has the highest accuracy and F1 score
+and added the visualization for comparison of POS taggers in grapical form and kept in the images in the project folder.

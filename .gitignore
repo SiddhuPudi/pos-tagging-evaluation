@@ -14,8 +14,4 @@ venv/
 
 #Output files
 *.csv
-*.png
 *.jpg
-
-#Ignore result files
-report/results.txt
